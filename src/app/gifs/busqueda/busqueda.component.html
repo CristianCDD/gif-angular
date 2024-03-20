@@ -1,0 +1,15 @@
+
+      <div class="containerInput">
+         <input  #txtBuscar type="text" class="form-control" (keyup.enter)="buscar(txtBuscar.value)" placeholder="Buscar gifs...">
+         <button class="btn btn-primary btn-sm mt-2 btnBuscar" (click)="buscar(txtBuscar.value)" ><i class="fa-solid fa-magnifying-glass"></i></button>
+       </div>
+      
+
+    
+       <div class="mt-3 contTwoButtons">
+       
+       <button class="btn btn-dark btn-sm btnInf" style="margin-right:3px;" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop" aria-controls="offcanvasWithBackdrop">Historial  <i class="fa-solid fa-clock-rotate-left"></i></button>       
+       
+       <button class="btn btn-danger btn-sm btnInf" (click)="limpiar()" type="button">Limpiar resultados  <i class="fa-solid fa-trash"></i></button>
+       
+       </div>
